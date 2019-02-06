@@ -1,0 +1,5 @@
+[INFO] 2019-01-29 10:17:12,614 validateLoginFn - Test: validateLoginFn(): PASSED
+[INFO] 2019-01-29 10:17:16,172 getLogger - LOGGER Initialized Successfully!!
+[INFO] 2019-01-29 10:17:26,114 validateGETAPI - Test: validateGETAPI(): PASSED
+[INFO] 2019-01-29 10:17:29,046 validatePOSTAPI - Test: validatePOSTAPI(): PASSED
+[INFO] 2019-01-29 10:17:29,261 getLogger - LOGGER Initialized Successfully!!

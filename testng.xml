@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--Running multiple suits-->
+<suite name="CE_SUITS">
+    <listeners>
+        <listener class-name="utils.Listener" />
+    </listeners>
+
+    <suite-files>
+        <suite-file path="suits/UITestSuit.xml"/>
+        <suite-file path="suits/APITestSuit.xml"/>
+        <suite-file path="suits/ExternalTestSuit.xml"/>
+    </suite-files>
+</suite>
+
+
+
+

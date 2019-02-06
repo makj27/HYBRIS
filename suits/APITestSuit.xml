@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--Suit to validate API test cases-->
+<suite name="APITestSuit" thread-count="2" verbose="1" parallel="false">
+
+    <test name="weatherforcast_test">
+        <parameter name="element" value="weatherforcast" />
+        <parameter name="endPoint" value="/hyderabad" />
+        <classes>
+            <class name="ce.APITests">
+                <methods>
+                    <include name="validateGETAPI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="pardot_test">
+        <parameter name="element" value="pardot" />
+        <parameter name="endPoint" value="/contacts" />
+        <classes>
+            <class name="ce.APITests">
+                <methods>
+                    <include name="validateGETAPI"/>
+                    <include name="validatePOSTAPI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [UITestSuit]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="ie"/>
+  <listeners>
+    <listener class-name="utils.Listener"/>
+  </listeners>
+  <test thread-count="2" name="facebooktest(failed)">
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="ce.UITests">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validateLoginFn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ce.UITests -->
+    </classes>
+  </test> <!-- facebooktest(failed) -->
+</suite> <!-- Failed suite [UITestSuit] -->

@@ -1,0 +1,35 @@
+[
+  {
+    "element":"servicenow",
+    "headers":{
+      "Accept":"application/json",
+      "Content-Type":"application/json",
+      "Authorization":"User d/YKGdOuA3ZES8TlpqiegD9WGgNSO7TQroWe8l747c8=, Organization f6fab7c39663a797f28f242bf4fda4c9, Element j+SI7x6lkxh67TI8XvSEQasURDpbnGj9poartbaxmbs="
+    },
+    "baseUrl": "https://snapshot.cloud-elements.com/elements/api-v2",
+    "payloads": "data\\payloads\\servicenow\\servicenow-createContact.json",
+    "testsToExecute": null
+  },
+  {
+    "element":"pardot",
+    "headers":{
+      "Accept":"application/json",
+      "Content-Type":"application/json",
+      "Authorization":"User d/YKGdOuA3ZES8TlpqiegD9WGgNSO7TQroWe8l747c8=, Organization f6fab7c39663a797f28f242bf4fda4c9, Element ojq+mrkiibGraZXKKUlN08/liiVme3e2c2Canrd3RF4="
+    },
+    "baseUrl": "https://snapshot.cloud-elements.com/elements/api-v2",
+    "payloads": "data\\payloads\\pardot\\pardot-createContact.json",
+    "testsToExecute": null
+  },
+  {
+    "element":"weatherforcast",
+    "headers":{
+      "Accept":"application/json",
+      "Content-Type":"application/json",
+      "Authorization":""
+    },
+    "baseUrl": "http://restapi.demoqa.com/utilities/weather/city",
+    "payloads": "data\\payloads\\weatherforcast\\sample.json",
+    "testsToExecute": null
+  }
+  ]

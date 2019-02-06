@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--Suit to validate UI test cases-->
+<suite name="UITestSuit" thread-count="2" verbose="1" parallel="false">
+    <parameter name="browser" value="chrome" />
+    <test name="facebooktest">
+        <parameter name="url" value="https://www.facebook.com/" />
+        <classes>
+            <class name="ce.UITests">
+                <methods>
+                    <include name="validateLoginFn" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

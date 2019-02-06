@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [ExternalTestSuit]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.Listener"/>
+  </listeners>
+  <test thread-count="2" name="Churros_Testing(failed)">
+    <classes>
+      <class name="ce.ExternalScriptTests">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="runScript" invocation-numbers="0">
+            <parameter name="location" value="C:\\Users\\gs-1992\\mayank\\churros"/>
+            <parameter name="file" value="Churros_Batch.bat"/>
+          </include> <!-- runScript -->
+        </methods>
+      </class> <!-- ce.ExternalScriptTests -->
+    </classes>
+  </test> <!-- Churros_Testing(failed) -->
+</suite> <!-- Failed suite [ExternalTestSuit] -->

@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--Suit to validate external script test cases-->
+<suite name="ExternalTestSuit" thread-count="2" verbose="1" parallel="false">
+
+    <!--test name="ExternalNodeJSTest">
+        <classes>
+            <class name="ce.ExternalScriptTests">
+                <methods>
+                    <include name="runScript">
+                        <parameter name="file" value="NodeJSBatch" />
+                        <parameter name="location" value="C:\\Users\\gs-1992\\mayank\\churrosAutomation" />
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ExternalPythonTests">
+        <classes>
+            <class name="ce.ExternalScriptTests">
+                <methods>
+                    <include name="runScript">
+                        <parameter name="file" value="PythonBatch" />
+                        <parameter name="location" value="C:\\Users\\gs-1992\\mayank\\pythonAutomation" />
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test-->
+    <test name="Use_Case_Testing">
+        <classes>
+            <class name="ce.ExternalScriptTests">
+                <methods>
+                    <include name="runScript">
+                        <parameter name="file" value="Use_Case_Testing_Batch.bat" />
+                        <parameter name="location" value="C:\\Users\\gs-1992\\mayank\\use_case_testing" />
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Churros_Testing">
+        <classes>
+            <class name="ce.ExternalScriptTests">
+                <methods>
+                    <include name="runScript">
+                        <parameter name="file" value="Churros_Batch.bat" />
+                        <parameter name="location" value="C:\\Users\\gs-1992\\mayank\\churros" />
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
